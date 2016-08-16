@@ -1,0 +1,17 @@
+{
+  "name": "my-app-seed",
+  "version": "1.0.0",
+  "homepage": "https://github.com/UW-Madison-DoIT/my-app-seed",
+  "authors": [
+    "Tim Levett <tim.levett@wisc.edu>"
+  ],
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular-marked": "~1.0.1"
+  },
+  "devDependencies": {}
+}

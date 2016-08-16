@@ -1,18 +1,20 @@
 define([
     'angular',
     'require',
+    'portal',
+    'marked',
+    'ngMarked',
     './view-home/routes', //add all the paths to your routes here
     'portal/settings/routes', // example pulling in portal module routes
     'portal/about/route', // Nice about page for your application
     'portal/main/routes',
-    'portal',
     'app-config',
     'ngRoute',
     'ngSanitize',
     'ngStorage',
     './view-home/controllers', //add all your paths to your other js files here
     './view-home/directives'
-], function(angular, require, homeRoutes, settingsRoutes, aboutRoute, mainRoutes) { //notice each route file is now an object
+], function(angular, require, portal, marked, ngMarked, homeRoutes, settingsRoutes, aboutRoute, mainRoutes) { //notice each route file is now an object
 
     var app = angular.module('my-app', [
         'app-config',
@@ -21,7 +23,8 @@ define([
         'ngRoute',
         'ngSanitize',
         'ngStorage',
-        'portal'
+        'portal',
+        'hc.marked'
     ]);
 
     // TODO: Think of a more extensible approach such that frame and app can each manage their own routing without conflict
